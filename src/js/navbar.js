@@ -13,7 +13,7 @@ class Header extends HTMLElement {
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #A1EEBD;
+      background-color: #7BD3EA;
     }
 
     ul {
@@ -27,7 +27,7 @@ class Header extends HTMLElement {
 
     a {
       font-weight: 700;
-      margin: 0 25px;
+      margin: 0 15px;
       color: #fff;
       text-decoration: none;
     }
@@ -39,7 +39,7 @@ class Header extends HTMLElement {
   </style>
   <header>
     <nav>
-    <p>devoojs</p>
+    <a>devoojs</a>
       <ul>
         <li><a href="web.html">Home</a></li>
         <li><a href="work.html">Work</a></li>
