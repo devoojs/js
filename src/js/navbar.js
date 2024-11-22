@@ -13,7 +13,7 @@ class Header extends HTMLElement {
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #7BD3EA;
+      background: linear-gradient(to right, rgb(252, 74, 26), rgb(247, 183, 51));
     }
 
     ul {
