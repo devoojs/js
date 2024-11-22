@@ -115,6 +115,10 @@ class Header extends HTMLElement {
   </header>
 `;
 
+  }
+}
+customElements.define('header-component',Header);
+
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -123,7 +127,3 @@ function myFunction() {
     x.className = "topnav";
   }
 }
-
-  }
-}
-customElements.define('header-component',Header);
