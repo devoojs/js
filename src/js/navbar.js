@@ -27,7 +27,7 @@ class Header extends HTMLElement {
 
     a {
       font-weight: 700;
-      margin: 0 15px;
+      margin: 0 25px;
       color: #fff;
       text-decoration: none;
     }
@@ -39,11 +39,11 @@ class Header extends HTMLElement {
   </style>
   <header>
     <nav>
-    <a>devoojs</a>
       <ul>
-        <li><a href="web.html">Home</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://devoojs.github.io/js">devoojs</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JS</a></li>
       </ul>
     </nav>
   </header>
