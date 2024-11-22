@@ -1,6 +1,3 @@
-const headerTemplate = document.createElement('template');
-
-
 class Header extends HTMLElement {
   constructor() {
     super();
