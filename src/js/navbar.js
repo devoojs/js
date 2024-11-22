@@ -1,6 +1,15 @@
 const headerTemplate = document.createElement('template');
 
-headerTemplate.innerHTML = `
+
+class Header extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    const shadowRoot = this.attachShadow({ mode: 'open' });
+
+    this.innerHTML = `
   <style>
     nav {
       height: 40px;
@@ -41,15 +50,6 @@ headerTemplate.innerHTML = `
     </nav>
   </header>
 `;
-class Header extends HTMLElement {
-  constructor() {
-    super();
-  }
-
-  connectedCallback() {
-    const shadowRoot = this.attachShadow({ mode: 'open' });
-
-    shadowRoot.appendChild(headerTemplate.content);
   }
 }
 customElements.define('header-component',Header);
