@@ -4,6 +4,7 @@ const assets = [
   "/index.html",
   "/src/js.navbar",
   "/header.js",
+  "/paw.js",
 ];
 
 self.addEventListener("install", installEvent => {
