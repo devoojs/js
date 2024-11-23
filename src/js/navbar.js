@@ -38,8 +38,8 @@ customElements.define('header-component',class Header extends HTMLElement {
   <header>
     <nav>
       <ul>
-      <li><a href="https://devoojs.github.io/js">devoojs</a></li>
-        <li><a href="#">HTML</a></li>
+      <li><a href="index.html">devoojs</a></li>
+        <li><a href="header.html">HTML</a></li>
         <li><a href="#">CSS</a></li>
         <li><a href="#">JS</a></li>
       </ul>
