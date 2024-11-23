@@ -10,7 +10,7 @@ customElements.define('header-component',class Header extends HTMLElement {
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(to right, rgb(252, 74, 26), rgb(247, 183, 51));
+      background-color: #7f7f7f
     }
 
     ul {
@@ -25,7 +25,7 @@ customElements.define('header-component',class Header extends HTMLElement {
     a {
       font-weight: 700;
       margin: 0 25px;
-      color: #fff;
+      color: #7f7f7f;
       text-decoration: none;
     }
 
