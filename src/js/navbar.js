@@ -1,4 +1,3 @@
-
 customElements.define('header-component',class Header extends HTMLElement {
   constructor() {
     super();
