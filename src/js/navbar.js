@@ -10,7 +10,7 @@ customElements.define('header-component',class Header extends HTMLElement {
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #7f7f7f
+      background-color: #f1f1f1
     }
 
     ul {
