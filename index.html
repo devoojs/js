@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/style.css">
+    <script src="paw.js"></script>
+    <!--  Web App Manifest include  -->
+    <link rel="manifest" href="manifest.json">
+    <!-- iOS and iPadOS icon -->
+    <link rel="apple-touch-icon" href="https://cdn.glitch.me/248b0d2d-8ab9-4407-a073-136440ab3556/icon.png?v=1640879741758">
   <title>devoojs</title>
   <style>
  * {
@@ -14,6 +20,19 @@
 </head>
 <body>
 	<header-component></header-component>
+	    <div class="container">
+      <h1>
+        Installation Prompt Demo
+      </h1>
+      <p class="instructions">
+        Load this PWA in a browser supporting beforeinstallprompt.
+      </p>
+      <section class="toolbar">
+        <button id="install">Install this App</button>
+      </section>
+      <output></output>
+
+    </div>
 	<div class="container"></div>
 	<script src="paw.js"></script>
 	<script src="src/js/navbar.js"></script>
