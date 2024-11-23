@@ -1,7 +1,7 @@
 {
   "name": "devoojs",
   "short_name": "devoojs",
-  "theme_color": "#FF7F3E",
+  "theme_color": "#f1f1f1",
   "background_color": "silver",
   "start_url": "./",
   "id": "demo-1",
