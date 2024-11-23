@@ -1,4 +1,4 @@
-navigator.serviceWorker.register("dummy-sw.js");
+navigator.serviceWorker.register("serviceWorker.js");
 
 window.addEventListener("DOMContentLoaded", async event => {
   if ('BeforeInstallPromptEvent' in window) {
