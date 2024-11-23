@@ -1,7 +1,7 @@
 {
   "name": "Web App Manifest Demo",
   "short_name": "devoojs",
-  "theme_color": "red",
+  "theme_color": "#FF7F3E",
   "background_color": "silver",
   "start_url": "./",
   "id": "demo-1",
