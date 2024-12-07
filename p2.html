@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>مثال تضمين كود مع التنسيقات</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css"> 
+  <style>
+    /*  بعض التنسيقات الأساسية */
+    .code-container {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .copy-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .copy-button:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="code-container">
+    <pre><code class="language-javascript">
+const aaa = function () {
+return bbb;
+}
+    </code></pre>
+    <button class="copy-button" data-clipboard-target=".language-javascript">نسخ</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+  <script>
+    new ClipboardJS('.copy-button');
+
+    // إضافة رسالة تأكيد عند النسخ
+    var clipboard = new ClipboardJS('.copy-button');
+    clipboard.on('success', function(e) {
+      console.info('تم نسخ النص:', e.text);
+      e.clearSelection();
+      const button = e.trigger;
+      button.textContent = 'تم النسخ!';
+      setTimeout(() => {
+        button.textContent = 'نسخ';
+      }, 2000);
+    });
+  </script>
+
+</body>
+</html>
