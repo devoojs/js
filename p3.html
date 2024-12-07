@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>مثال تضمين كود مع التنسيقات</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+  <style>
+    /*  تنسيقات  أكثر احترافية */
+    .code-container {
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .code-header {
+      background-color: #24292e; 
+      color: #fff;
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .language {
+      font-weight: bold;
+    }
+    .copy-button {
+      padding: 5px 10px;
+      background-color: #6f42c1; /*  لون بنفسجي  */
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .copy-button:hover {
+      background-color: #5a32a3;
+    }
+    .copy-button:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(111, 66, 193, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <h2>مثال على كود Python</h2>
+  <div class="code-container">
+    <div class="code-header">
+      <span class="language">Python</span>
+      <button class="copy-button" data-clipboard-target="#python-code">نسخ</button>
+    </div>
+    <pre><code id="python-code" class="language-javascript">
+<div>
+  const aaa = ""
+</div>
+    </code></pre>
+  </div>
+
+  <h2>مثال على كود JavaScript</h2>
+  <div class="code-container">
+    <div class="code-header">
+      <span class="language">JavaScript</span>
+      <button class="copy-button" data-clipboard-target="#javascript-code">نسخ</button>
+    </div>
+    <pre><code id="javascript-code" class="language-javascript">
+function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+
+greet("World");
+    </code></pre>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+  <script>
+    // تهيئة clipboard.js  مع  رسالة تأكيد
+    new ClipboardJS('.copy-button').on('success', function(e) {
+      e.clearSelection();
+      const button = e.trigger;
+      button.textContent = 'تم النسخ!';
+      setTimeout(() => {
+        button.textContent = 'نسخ';
+      }, 2000);
+    });
+  </script>
+
+</body>
+</html>
